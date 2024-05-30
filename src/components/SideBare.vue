@@ -79,7 +79,7 @@
 
     <router-link to="/" class="button">
       <v-list-item>
-          <v-icon color="#00cce2">mdi mdi-ticket</v-icon>
+          <v-icon color="#00cce2">mdi mdi-logout</v-icon>
         <v-list-item-title  class="li">Logout</v-list-item-title>
       </v-list-item>
     </router-link>
