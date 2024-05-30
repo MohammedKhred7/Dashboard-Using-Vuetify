@@ -4,7 +4,7 @@
     <SideBare />
     <v-main>
       <v-container class="px-6 mt-n2" >
-        <br> 
+        <br>
         <v-row>
 
           <v-col  class="mt-n4" col="12"  >
@@ -22,46 +22,46 @@
            <br>
 <div class="group">
                <v-text-field  style="color: aliceblue; margin-bottom: 5px; margin: 0 10px; color: #F1F6F9; " :class="{ 'animated': animate }"
-      @focus="startAnimation" 
+      @focus="startAnimation"
                  label="Name"
                  type="text"
                  :rules="emailRules"
                ></v-text-field>
 
              <v-select style="color: aliceblue; margin-bottom: 5px; margin: 0 10px;" :class="{ 'animated': animate }"
-                @focus="startAnimation" 
+                @focus="startAnimation"
                 v-model="selectedOption"
                 :items="category"
                 item-title="category_title"
-                item-value="value" 
+                item-value="value"
                 label="Select an Categories"
               ></v-select>
 
                 <v-select style="color: aliceblue; margin-bottom: 5px; margin: 0 10px;" :class="{ 'animated': animate }"
-      @focus="startAnimation" 
+      @focus="startAnimation"
     v-model="select"
     :items="owner"
     item-title="owner_name"
-    item-value="value" 
+    item-value="value"
     label="Select an Owners "
-  ></v-select> 
+  ></v-select>
               </div>
         <div class="group">
         <v-text-field   style="color: aliceblue; margin-bottom: 5px; margin: 0 10px;" :class="{ 'animated': animate }"
-      @focus="startAnimation" 
+      @focus="startAnimation"
                  label="Address"
                  type="text"
                 :rules="pwdRules"
                 ></v-text-field>
                 <v-file-input   style="color: aliceblue; margin-bottom: 5px;margin: 0 10px; color: #F1F6F9;" :class="{ 'animated': animate }"
-      @focus="startAnimation" 
+      @focus="startAnimation"
                  label="Images"
                  accept=".jpg, .jpeg, .png"
                  multiple
                  prepend-icon="mdi mdi-camera"
                 ></v-file-input>
                 <v-file-input   style="color: aliceblue; margin-bottom: 5px;margin: 0 10px; color: #F1F6F9;" :class="{ 'animated': animate }"
-      @focus="startAnimation" 
+      @focus="startAnimation"
                  label="Images"
                  accept=".jpg, .jpeg, .png"
                  multiple
@@ -70,7 +70,7 @@
               </div>
               <div class="group">
                 <v-textarea style="color: aliceblue; margin-bottom: 5px;margin: 0 10px; color: #F1F6F9;" :class="{ 'animated': animate }"
-      @focus="startAnimation" 
+      @focus="startAnimation"
           label="Description"
           rows="3"
           variant="filled"
@@ -79,27 +79,27 @@
         ></v-textarea></div>
         <div class="group">
                <v-text-field  style="color: aliceblue; margin-bottom: 5px; margin: 0 10px; color: #F1F6F9; " :class="{ 'animated': animate }"
-      @focus="startAnimation" 
+      @focus="startAnimation"
                  label="Longitude"
                  type="text"
                  :rules="emailRules"
                ></v-text-field>
 
                <v-text-field  style="color: aliceblue; margin-bottom: 5px; margin: 0 10px; color: #F1F6F9; " :class="{ 'animated': animate }"
-      @focus="startAnimation" 
+      @focus="startAnimation"
                  label="Latitude"
                  type="text"
                  :rules="emailRules"
                ></v-text-field>
 
                <v-text-field  style="color: aliceblue; margin-bottom: 5px; margin: 0 10px; color: #F1F6F9; " :class="{ 'animated': animate }"
-      @focus="startAnimation" 
+      @focus="startAnimation"
                  label="Zome"
                  type="text"
                  :rules="emailRules"
                ></v-text-field>
               </div>
-              
+
 
         </row>
         </div>
@@ -110,7 +110,7 @@
             <v-card class="login__form2"   >
               <div class="login__box">
                   <i class="ri-user-3-line login__icon"></i>
-  
+
                   <div class="login__box-input">
                      <input type="email"  class="login__input" placeholder=" ">
                      <label for="login-email" class="login__label">Longitude</label>
@@ -118,7 +118,7 @@
                </div>
                <div class="login__box">
                   <i class="ri-user-3-line login__icon"></i>
-  
+
                   <div class="login__box-input">
                      <input type="email"  class="login__input" placeholder=" " >
                      <label for="login-email" class="login__label">Latitude</label>
@@ -126,7 +126,7 @@
                </div>
                <div class="login__box">
                   <i class="ri-user-3-line login__icon"></i>
-  
+
                   <div class="login__box-input">
                      <input type="email"  class="login__input" placeholder=" " >
                      <label for="login-email" class="login__label">Zome</label>
@@ -147,8 +147,8 @@
           </v-window-item>
             </v-window>
             <div style="display: flex; margin-top: 20px;" >
-            <button  @click="step=2" class="login__button2">Add</button>
-            <button   @click="step=3" class="login__button2">Edit</button>
+            <button   class="login__button2">Add</button>
+            <button    class="login__button2">Edit</button>
             <button  class="login__button2">delete</button>
           </div>
           </v-col>
@@ -189,20 +189,20 @@ first_name:'',
  password:'',
  password_confirmation:'',
 },
-   items:[],    
+   items:[],
     update:[{
       first_name:'',
       last_name:'',
       email:'',
     }
-],  
+],
 first_nameRules:[v => !!v ],
 last_nameRules:[v => !!v ],
 emailRules:[v => !!v ],
 pwdRules: [v => !!v ],
    pwdConfirm: [
      v => !!v ,
-     v => v === this.signup.password 
+     v => v === this.signup.password
    ],
 }
 },
@@ -346,7 +346,7 @@ components: {
 },
 created() {
  console.log(this.token);
- this.getCategory() 
+ this.getCategory();
  this.getOwners();
 
       }
@@ -380,7 +380,7 @@ created() {
     transform: translateX(0);
   }
 }
- .search{ 
+ .search{
    margin: 1px 1px;
    padding: 10px;
  }
@@ -394,7 +394,7 @@ created() {
  border-style:inherit 20px #00cce2 ;
  }
  .search button{
- 
+
    width: 20%;
    padding-block: 0.8rem;
    border-radius: 0.5rem;
@@ -413,7 +413,7 @@ created() {
   padding: 0 20px;
 }
 .list{
-  background-color: hsla(0, 0%, 10%, 0.1); 
+  background-color: hsla(0, 0%, 10%, 0.1);
 border: 2px solid white;
  backdrop-filter: blur(8px);
 }
@@ -421,7 +421,7 @@ border: 2px solid white;
 .list :hover{
   background: rgb(219, 219, 219);
   box-shadow: 20px black;
-  
+
 }
 .login__button {
   width: 100%;

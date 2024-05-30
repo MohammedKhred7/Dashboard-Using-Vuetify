@@ -77,7 +77,7 @@
       </v-list-item>
     </router-link>
 
-    <router-link to="/" class="button">
+    <router-link to="/Dashboard-Using-Vuetify/" class="button">
       <v-list-item>
           <v-icon color="#00cce2">mdi mdi-logout</v-icon>
         <v-list-item-title  class="li">Logout</v-list-item-title>

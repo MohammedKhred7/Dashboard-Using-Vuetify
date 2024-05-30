@@ -1,6 +1,6 @@
 <template>
   <GoogleMap
-  api-key="AIzaSyC_GNHBZA8Jw8HROjgf_lg_2FcAZRJGEkI"
+  api-key="AIzaSyB-q8V0_V2ACAyOzj0YV4uEsau_UgB79xo"
   style="height:calc(70vh - 77px) ; width: 100%;"
   :center="center"
   :zoom="15"
@@ -9,8 +9,13 @@
     <Marker :options="{ position:'markerPosition' }" />
     <CustomMarker :options="{ position: { lat: 14.54, lng: 49.10 }, anchorPoint: 'BOTTOM_CENTER' }">
       <div style="text-align: center">
-        <div style="font-size: 1.125rem">mohammed</div>
-        <img src="https://vuejs.org/images/logo.png" width="50" height="50" style="margin-top: 8px" />
+        <div style="font-size: 1.rem">mohammed</div>
+        <v-avatar size="auto">
+          <v-img
+          width="50px"
+            src="/MOHAMMED.jpg"
+          />
+        </v-avatar>
       </div>
     </CustomMarker>
   </GoogleMap>
@@ -24,20 +29,6 @@
           end
         ></v-icon>
       </v-btn>
-      <v-text-field
-    color="success"
-    class="ma-2"
-    v-model="lat" label="Latitude" 
-    disabled
-    loading
-  ></v-text-field>
-  <v-text-field
-  class="ma-2"
-    color="success"
-    v-model="lng" label="Longitude"
-    disabled
-    loading
-  ></v-text-field>
 </template>
 
 <script setup>
