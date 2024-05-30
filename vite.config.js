@@ -8,7 +8,6 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/Dashboard-Using-Vuetify/",
   plugins: [
     vue({
       template: { transformAssetUrls }
@@ -21,6 +20,7 @@ export default defineConfig({
       },
     }),
   ],
+  base: "/Dashboard-Using-Vuetify/",
   define: { 'process.env': {} },
   resolve: {
     alias: {
@@ -36,7 +36,7 @@ export default defineConfig({
       '.vue',
     ],
   },
-  server: {
-    port: 3000,
-  },
+  // server: {
+  //   port: 3000,
+  // },
 })
